@@ -1,0 +1,38 @@
+{% block content %}
+<!DOCTYPE html>
+<html Lang="es"><!-- Lenguaje //-->
+	<head>  
+		<meta charset='utf-8'>
+		<title>Selecciona</title><!-- Titulo //-->
+		<strong><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></strong><!-- Formato //-->
+		<link rel="stylesheet" href="stylesheet2.css">
+	</head>
+	<body>
+		<div id='contenido'>
+			<header>
+				<hgroup>
+					<h1>Apartamentos TEC</h1>
+				</hgroup>
+				<nav>
+					<ul>
+					<li><a href="{{url_for('Pagina')}}">Ingresa</a></li><!-- Ingresar //-->
+					<li><a href="{{url_for('muestra')}}">Muestra</a></li><!-- Mostrar//-->
+					<li><a href="{{url_for('busqueda')}}">Busqueda</a></li><!--Buscar //-->
+					</ul>
+				</nav>
+			</header>
+			<section>
+				<div id='textoPr'>
+					<article>
+					<hgroup> 
+						<h1>Todos los Apartamentos que un estudiante del TEC pueda encontrar</h1> <!-- Titulo //-->
+					</hgroup>
+					<p> Donde encuentras los apartamentos que mas te gusten <!-- Parrafo //-->
+					</p>
+					</article>
+			</div>
+			</section>		
+		</div>
+	</body>
+</html>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% block content %}<!-- Inicio del bloque  //-->
+<strong><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></strong><!-- Formato  //-->
+<h1>Cual busqueda que desea realizar?</h1><br><!-- Titulo  //-->
+<!-- Opciones de busqueda  //-->
+<li><a href="{{url_for('busquedaubicacion')}}">Busqueda por ubicacion</a></li><br>
+<li><a href="{{url_for('muestraporprecio')}}">Busqueda por precio</a></li><br>
+
+<li><a href="{{url_for('busquedafac')}}">Busqueda por facilidades</a></li><br>
+<li><a href="{{url_for('busquedacarac')}}">Busqueda por caracteristicas</a></li><br>
+
+<li><a href="{{url_for('Verificacion')}}">Menu</a></li><br><!-- Volver al menu  //-->
+
+{% endblock %}<!-- Final del bloque  //-->

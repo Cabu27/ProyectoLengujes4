@@ -1,0 +1,12 @@
+{% block content %}<!-- Inicio del bloque  //-->
+<!-- Pagina para la busqueda de ubicacion //-->
+<h1>Busqueda por ubicacion</h1><!-- Titulo  //-->
+<strong><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></strong><!-- Formato //-->
+<ul>
+{% for n in Lista %}<!--Ciclo para mostrar la informacion  //-->
+<li>{{n}}</li><!-- Se imprimen en el html  //-->
+{% endfor %} <!-- Fin del ciclo //-->
+</ul>
+
+<li><a href="{{url_for('Verificacion')}}">Menu</a></li><!-- Volver al menu  //-->
+{% endblock %}<!-- Fin del bloque //-->

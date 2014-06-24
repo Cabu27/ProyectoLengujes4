@@ -1,0 +1,39 @@
+{% block content %}
+<!DOCTYPE html>
+<html Lang="es"><!-- Lenguaje //-->
+	<head>  
+		<meta charset='utf-8'>
+		<link rel="stylesheet" href="stylesheet2.css">
+		<strong><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></strong><!-- Formato //-->
+	</head>
+	<body>
+		<div id='contenido'>
+			<header>
+				<hgroup>
+					<h1>Ingrese los datos</h1>
+				</hgroup>
+				<nav>
+					<ul>
+						
+					</ul>
+				</nav>
+			</header>
+			<section>
+				<div id='textoPr'>
+					<hgroup>
+						<h1> </h1><!-- Titulo //-->
+					</hgroup>
+					<!-- Obtiene lo que se le solicita al cliente con el metodo post //-->
+					<form method="post" action="{{ url_for('muestraporubicacion') }}" name="muestraporubicacion">
+					<p><label> Ubicacion : </label> <input type="text" name="ubicacion" required></p><br>
+					
+					
+					 <p><button type="submit">Ingresa</button></p>
+					</form>
+							
+			</div>
+			</section>		
+		</div>
+	</body>
+</html>
+{% endblock %}

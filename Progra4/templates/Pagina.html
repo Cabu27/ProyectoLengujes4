@@ -1,0 +1,111 @@
+{% block content %}
+<!DOCTYPE html>
+<html Lang="es"><!-- Lenguaje //-->
+	<head>  
+		<meta charset='utf-8'>
+		<link rel="stylesheet" href="stylesheet2.css">
+		<strong><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></strong><!-- Formato //-->
+	</head>
+	<body>
+		<div id='contenido'>
+			<header>
+				<hgroup>
+					<h1>Ingrese los datos</h1>
+				</hgroup>
+				<nav>
+					<ul>
+						
+					</ul>
+				</nav>
+			</header>
+			<section>
+				<div id='textoPr'>
+					<hgroup>
+						<h1> </h1><!-- Titulo //-->
+					</hgroup>
+					<!-- Obtiene lo que se le solicita al cliente con el metodo post //-->
+					<form method="post" action="{{ url_for('Opciones') }}" name="Opciones">
+					 <p><label> Titulo : </label> <input type="text" name="titulo" required></p><br>
+					<p><label> Descripcion : </label> <input type="text" name="descripcion" required></p><br>
+					<label> Facilidades : </label>
+					<br>
+					<label> Luz : </label>
+					<select name="Luz">
+					<option>Si</option>
+					<option>No</option>
+					</select>
+					<label> Agua : </label>
+					<select name="Agua">
+					<option>Si</option>
+					<option>No</option>
+					</select>
+					<label> Cable : </label>
+					<select name="Cable">
+					<option>Si</option>
+					<option>No</option>
+					</select>
+					<label> Internet : </label>
+					<select name="Internet">
+					<option>Si</option>
+					<option>No</option>
+					</select>
+					<label> Amueblado : </label>
+					<select name="Amueblado">
+					<option>Si</option>
+					<option>No</option>
+					</select>
+					<label> cocina : </label>
+					<select name="cocina">
+					<option>Si</option>
+					<option>No</option>
+					</select>
+					<label> lavado : </label>
+					<select name="lavado">
+					<option>Si</option>
+					<option>No</option>
+					</select>
+					<label> Otros : </label>
+					<select name="Otros">
+					<option>Si</option>
+					<option>No</option>
+					</select>
+
+					<label> Caracteristicas: </label>
+					<p><label> Numero de pisos : </label> <input type="text" name="numeropisos" required></p><br>
+					<p><label> Numero de dormitorios : </label> <input type="text" name="numerodormitorios" required></p><br>
+					<p><label> Numero de baños : </label> <input type="text" name="numerobanos" required></p><br>
+					<p><label> Numero de estacionamientos : </label> <input type="text" name="numeroestacionamientos" required></p><br>
+					<label> pilas : </label>
+					<select name="pilas">
+					<option>Si</option>
+					<option>No</option>
+					</select>
+					<label> Jardin : </label>
+					<select name="Jardin">
+					<option>Si</option>
+					<option>No</option>
+					</select>
+					<label> Balcon : </label>
+					<select name="Balcon">
+					<option>Si</option>
+					<option>No</option>
+					</select>
+					<p><label> Ubicacion : </label> <input type="text" name="ubicacion" required></p><br>
+					<p><label> Precio : </label> <input type="text" name="precio" required></p><br>
+					<p><label> Contacto : </label> 
+					<br>
+					<p><label> Nombre : </label> 
+					<input type="text" name="nombre" required></p><br>
+					<p><label> Telefono : </label> 
+					<input type="text" name="telefono" required></p><br>
+					<p><label> Correo : </label> 
+					<input type="text" name="correo" required></p><br>
+					 <p><button type="submit">Ingresa</button></p>
+					</form>
+							
+			</div>
+			</section>		
+		</div>
+	</body>
+</html>
+{% endblock %}
